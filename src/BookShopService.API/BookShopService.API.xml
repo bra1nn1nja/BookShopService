@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookShopService.API</name>
+    </assembly>
+    <members>
+        <member name="M:BookShopService.API.Controllers.BooksController.CreateBook(BookShopService.API.DTOs.CommonBook)">
+            <summary>
+            Creates a new book.
+            </summary>
+        </member>
+        <member name="M:BookShopService.API.Controllers.BooksController.GetBooks(System.String)">
+            <summary>
+            Returns a list of books. Sorted by title by default.
+            </summary>
+            <param name="sortby">Available values : title, author, price</param>
+        </member>
+        <member name="M:BookShopService.API.Controllers.BooksController.PutBookById(System.Int64,BookShopService.API.DTOs.CommonBook)">
+            <summary>
+            Update an existing book.
+            </summary>
+        </member>
+        <member name="M:BookShopService.API.Controllers.BooksController.GetBookById(System.Int64)">
+            <summary>
+            Gets a book by id.
+            </summary>
+        </member>
+        <member name="M:BookShopService.API.Controllers.BooksController.DeleteBookById(System.Int64)">
+            <summary>
+            Deletes a book by id.
+            </summary>
+        </member>
+        <member name="T:BookShopService.API.DTOs.CommonBook">
+            <summary>
+            DTO book object without a unique identifier
+            </summary>
+        </member>
+        <member name="P:BookShopService.API.DTOs.CommonBook.Title">
+            <summary>
+            The book's title.
+            </summary>
+            <example>Journey to the Center of the Earth</example>
+        </member>
+        <member name="P:BookShopService.API.DTOs.CommonBook.Author">
+            <summary>
+            The book's author.
+            </summary>
+            <example>Jules Verne</example>
+        </member>
+        <member name="P:BookShopService.API.DTOs.CommonBook.Price">
+            <summary>
+            The book's price.
+            </summary>
+            <example>10.99</example>
+        </member>
+        <member name="T:BookShopService.API.DTOs.RequestErrors">
+            <summary>
+            DTO used in id specific get and put requests to pass back bad request errors i.e. missing title
+            </summary>
+        </member>
+        <member name="P:BookShopService.API.DTOs.RequestErrors.errors">
+            <example>["Title is required"]</example>
+        </member>
+        <member name="T:BookShopService.API.DTOs.UniqueBook">
+            <summary>
+            DTO book object with a unique identifier
+            </summary>
+        </member>
+        <member name="P:BookShopService.API.DTOs.UniqueBook.Title">
+            <summary>
+            The book's title.
+            </summary>
+            <example>Journey to the Center of the Earth</example>
+        </member>
+        <member name="P:BookShopService.API.DTOs.UniqueBook.Author">
+            <summary>
+            The book's price.
+            </summary>
+            <example>10.99</example>
+        </member>
+        <member name="P:BookShopService.API.DTOs.UniqueBook.Price">
+            <summary>
+            The book's price.
+            </summary>
+            <example>10.99</example>
+        </member>
+    </members>
+</doc>
