@@ -1,0 +1,6 @@
+Assumptions
+
+- Price - precision needs to be maintained to 4 decimal places and 10 significant digits.
+- Get all with no books returns an empty array
+- Get all sort order is alphabetically and numerically descending
+
